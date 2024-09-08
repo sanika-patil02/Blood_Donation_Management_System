@@ -2,18 +2,21 @@
 			<div class="container-fluid">					
 				<div class="row contactus">
 					<div class="col-md-6 offset-md-3">
-						<h1 class="text-center">Contact Us</h1>
+						<h1 class="text-center">Follow Us</h1>
 						<hr class="white-bar">
 
 							<h1 class="text-center">
-								<a  target="_blank" href="https://www.facebook.com/exceptionalprogrammers"><i style="color: #fff;" class="fab fa-facebook-square"></i></a>
+								<!-- <a  target="_blank" href=""><i style="color: #fff;" class="fab fa-facebook-square"></i></a>
+								<a target="_blank" href=""><i style="color: #fff;" class="fab fa-instagram"></i></a>  -->
 
-								<a target="_blank" href="https://www.youtube.com/exceptionalprogrammers"><i style="color: #fff;" class="fab fa-youtube-square"></i></a> 
+								<i style="color: #fff;" class="fab fa-facebook-square"></i>
+								<i style="color: #fff;" class="fab fa-instagram"></i>
 							</h1>
 
 							<div class="details">
-								 <p> 92 300 1234567 <i class="fa fa-phone"></i>
-								exceptionalprogrammers@gmail.com <i class="fa fa-envelope"></i>  </p>
+								 <!-- <p> 92 300 1234567 <i class="fa fa-phone"></i>
+								donatetheblood@gmail.com <i class="fa fa-envelope"></i>  </p> -->
+								<h6 style="color: #fff;" class="text-center">© Copyrights 2024 DONATETHEBLOOD, All rights reserved.</h6>
 							</div>
 
 					</div>

@@ -114,10 +114,11 @@ include('include/header.php');
 		<div class="col-md-12">
 			<h1 class="text-center" style="color: white; font-weight: 700;padding: 10px 0 0 0;">Donate The Blood</h1>
 			<hr class="white-bar">
-			<p class="text-center pera-text">
-				We are a group of exceptional programmers; our aim is to promote education. If you are a student, then contact us to secure your future. We deliver free international standard video lectures and content. We are also providing services in Web & Software Development.
-
-				We are a group of exceptional programmers; our aim is to promote education. If you are a student, then contact us to secure your future. We deliver free international standard video lectures and content. We are also providing services in Web & Software Development.
+			<p class="pera-text">  
+				<!-- text-center -->
+			Every second counts when saving lives, and you can make the difference.Your one blood donation could be the miracle someone needs for a second chance at life. 
+			Join our community of lifesavers today and ensure that no one ever faces a life-threatening blood shortage.Together, we can create a world where help is always 
+			just a heartbeat away.Sign up now and be part of a life-changing network!
 			</p>
 			<a href="#" class="btn btn-default btn-lg text-center center-aligned">Become a Life Saver!</a>
 		</div>
@@ -133,7 +134,7 @@ include('include/header.php');
 				<h3 class="text-center red">Our Vission</h3>
 				<img src="img/binoculars.png" alt="Our Vission" class="img img-responsive" width="168" height="168">
 				<p class="text-center">
-					We are a group of exceptional programmers; our aim is to promote education. If you are a student, then contact us to secure your future. We deliver free international standard video lectures and content. We are also providing services in Web & Software Development.
+				We aim to create a future where no life is lost due to a lack of available blood. We envision a world where every patient has immediate access to the blood they need, regardless of time or place. With your help, we can ensure that urgent medical needs are met with compassion and action.
 				</p>
 			</div>
 		</div>
@@ -143,8 +144,8 @@ include('include/header.php');
 				<h3 class="text-center red">Our Goal</h3>
 				<img src="img/target.png" alt="Our Vission" class="img img-responsive" width="168" height="168">
 				<p class="text-center">
-					We are a group of exceptional programmers; our aim is to promote education. If you are a student, then contact us to secure your future. We deliver free international standard video lectures and content. We are also providing services in Web & Software Development.
-				</p>
+				Our goal is to eliminate blood shortages by creating a robust network of dedicated donors. We strive to make it simple for patients to access blood quickly and efficiently, ensuring that no patient has to wait for the life-saving blood they need in critical situations.			
+			    </p>
 			</div>
 		</div>
 
@@ -153,8 +154,8 @@ include('include/header.php');
 				<h3 class="text-center red">Our Mission</h3>
 				<img src="img/goal.png" alt="Our Vission" class="img img-responsive" width="168" height="168">
 				<p class="text-center">
-					We are a group of exceptional programmers; our aim is to promote education. If you are a student, then contact us to secure your future. We deliver free international standard video lectures and content. We are also providing services in Web & Software Development.
-				</p>
+				To connect blood donors with those in need through a user-friendly platform, ensuring that life-saving blood is readily available and the donation process is simple and accessible. We aim to foster a strong community of donors dedicated to making a difference and saving lives.
+                </p>
 			</div>
 		</div>
 	</div>

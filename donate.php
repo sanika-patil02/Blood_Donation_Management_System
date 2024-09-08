@@ -111,7 +111,7 @@ if (isset($_POST['submit'])) {
 				$result = mysqli_query($connection, $sql);
 				if (mysqli_num_rows($result) > 0) {
 					$emailError = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <strong>Sorry this email is already exist.</strong>
+                <strong>Sorry,this email already exist.</strong>
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
@@ -392,7 +392,8 @@ if (isset($_POST['submit'])) {
 						<option value="28">28</option>
 						<option value="29">29</option>
 						<option value="30">30</option>
-						<option value="31">31</option>
+						<option value="31">31</option>  
+						<!-- value=31 this field is inserted in database -->
 					</select>
 					<select class="form-control demo-default" name="month" id="month" style="margin-bottom:10px;" required>
 						<option value="">---Month---</option>
@@ -460,12 +461,12 @@ if (isset($_POST['submit'])) {
 						<option value="1997">1997</option>
 						<option value="1998">1998</option>
 						<option value="1999">1999</option>
-						<option value="1999">2000</option>
-						<option value="1999">2001</option>
-						<option value="1999">2002</option>
-						<option value="1999">2003</option>
-						<option value="1999">2004</option>
-						<option value="1999">2005</option>
+						<option value="2000">2000</option>
+						<option value="2001">2001</option>
+						<option value="2002">2002</option>
+						<option value="2003">2003</option>
+						<option value="2004">2004</option>
+						<option value="2005">2005</option>
 					</select>
 				</div><!--End form-group-->
 				<?php

@@ -2,6 +2,50 @@
 include 'include/header.php';
 // Prohibited the direct access to file (localhost/donatetheblood/user/index.php)
 if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
+
+	if(isset($_POST['date'])){
+		$showForm = '
+		<div class="alert alert-danger alert-dismissible fade show" role="alert">
+		<strong>Are you sure to update your record?</strong>
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+		</button>
+		<form target="" method="post">
+		<br>
+		<input type="hidden" name="userID" value="'.$_SESSION['user_id'].'">
+		<button type="submit" name="updateSave" class="btn btn-danger">Yes</button>
+
+		<button type="button" class="btn btn-info" data-dismiss="alert">
+			<span aria-hidden="true">Oops! No </span>
+		</button>
+		</form>
+		</div> 
+		
+		';
+
+	}
+
+	if(isset($_POST['userID'])){
+		$userID = $_POST['userID'];
+
+		$currDate=date_create();
+		$currDate = date_format($currDate, 'Y-m-d');
+		$sql ="UPDATE donor SET save_life_date='$currDate' WHERE id='$userID'";
+		if(mysqli_query($connection,$sql)){
+			$_SESSION['save_life_date']=$currDate;
+			header("Location: index.php");
+
+		}else{
+			$submitError = '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+				<strong>Data not inserted,Try again.</strong>
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+				</div>';
+		}
+
+
+	}
 ?>
 
 	<style>
@@ -33,6 +77,7 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
 			<div class="col-md-12 col-md-push-1">
 				<div class="panel panel-default" style="padding: 20px;">
 					<div class="panel-body">
+						<?php if (isset($submitError)) echo $submitError; ?>
 
 						<div class="alert alert-danger alert-dismissable" style="font-size: 18px; display: none;">
 
@@ -44,21 +89,25 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
 								<button class="btn btn-info" id="no" name="no">No</button>
 							</div>
 						</div>
+
 						<div class="heading text-center">
 							<h3>Welcome </h3>
 							<h1><?php if(isset($_SESSION['name'])) echo $_SESSION['name']; ?></h1>
 						</div>
 						<p class="text-center">Here you can manage your account! Update Your Profile</p>
 						
+						<div class="test-success text-center" id="data" style="margin-top: 20px;">
+							<?php if(isset($showForm)) echo $showForm; ?><!-- Display Message here-->
+						</div>
 
 						<?php
-						$saveDate = $_SESSION['save_life_date'];
-						if($saveDate == '0'){
+						$safeDate = $_SESSION['save_life_date'];
+						if($safeDate == '0'){
 							echo '<form action="" method="post">
 							<button style="margin-top: 20px;" name="date" id="save_the_life" type="submit" class="btn btn-lg btn-danger center-aligned ">Save The Life</button>
 							</form>';
 						}else{
-							$start = date_create("$saveDate");
+							$start = date_create("$safeDate");
 							// If date is not mentioned in date_create(),then it takes current date
 							$end = date_create();
 							$diff=date_diff($start,$end);
@@ -79,11 +128,6 @@ if (isset($_SESSION['user_id']) && !empty($_SESSION['user_id'])) {
 						}
 						?>
 						
-						
-
-						
-
-						<div class="test-success text-center" id="data" style="margin-top: 20px;"><!-- Display Message here--></div>
 
 					</div>
 				</div>

@@ -52,10 +52,7 @@
 			<h2 class="text-center">Our Vission</h2>
 			<hr class="red-bar">
 			<p>
-				We are a group of exceptional programmers; our aim is to promote education. If you are a student, then contact us to secure your future. We deliver free international standard video lectures and content. We are also providing services in Web & Software Development.
-			</p>
-			<p>
-				We are a group of exceptional programmers; our aim is to promote education. If you are a student, then contact us to secure your future. We deliver free international standard video lectures and content. We are also providing services in Web & Software Development.
+			We aim to create a future where no life is lost due to a lack of available blood. We envision a world where every patient has immediate access to the blood they need, regardless of time or place. With your help, we can ensure that urgent medical needs are met with compassion and action.
 			</p>
 		</div>
 	</div>
@@ -70,10 +67,7 @@
 			<h2 class="text-center">Our Goal</h2>
 			<hr class="red-bar">
 			<p>
-				We are a group of exceptional programmers; our aim is to promote education. If you are a student, then contact us to secure your future. We deliver free international standard video lectures and content. We are also providing services in Web & Software Development.
-			</p>
-			<p>
-				We are a group of exceptional programmers; our aim is to promote education. If you are a student, then contact us to secure your future. We deliver free international standard video lectures and content. We are also providing services in Web & Software Development.
+			Our goal is to eliminate blood shortages by creating a robust network of dedicated donors. We strive to make it simple for patients to access blood quickly and efficiently, ensuring that no patient has to wait for the life-saving blood they need in critical situations.			
 			</p>
 		</div>
 		<div ><img src="img/target.png" alt="Our Vission" class="rounded img-fluid float-right"></div>
@@ -91,10 +85,7 @@
 			<h2 class="text-center">Our Mission</h2>
 			<hr class="red-bar">
 			<p>
-				We are a group of exceptional programmers; our aim is to promote education. If you are a student, then contact us to secure your future. We deliver free international standard video lectures and content. We are also providing services in Web & Software Development.
-			</p>
-			<p>
-				We are a group of exceptional programmers; our aim is to promote education. If you are a student, then contact us to secure your future. We deliver free international standard video lectures and content. We are also providing services in Web & Software Development.
+			To connect blood donors with those in need through a user-friendly platform, ensuring that life-saving blood is readily available and the donation process is simple and accessible. We aim to foster a strong community of donors dedicated to making a difference and saving lives.
 			</p>
 		</div>
 	</div>
